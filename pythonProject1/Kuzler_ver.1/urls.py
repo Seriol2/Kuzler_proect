@@ -1,11 +1,17 @@
-from django.urls import path
+from django.contrib import admin
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from myapp.views import ProductViewSet, NFCTagViewSet
 
-from .views import LessonView
+# Создаем маршрутизатор для API
+router = DefaultRouter()
+router.register('products', ProductViewSet, basename='product')
+router.register('nfc-tags', NFCTagViewSet, basename='nfctag')
 
-
-app_name = "lessons"
-
-# app_name will help us do a reverse look-up latter.
 urlpatterns = [
-    path('lessons/', LessonView.as_view()),
+    # Маршрут для админки Django
+    path('admin/', admin.site.urls),
+    
+    # Маршруты для API
+    path('api/', include(router.urls)),
 ]
