@@ -1,6 +1,5 @@
 from django.apps import AppConfig
 
-
-class MyAppConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'Kuzler_ver.1'
+class StoreConfig(AppConfig):
+    name = 'store'  # Имя приложения
+    verbose_name = "Магазин"  # Человеко-понимаемое имя приложения (будет отображаться в админке Django)
