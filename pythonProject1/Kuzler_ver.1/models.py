@@ -1,20 +1,14 @@
 from django.db import models
 
-# Модель для продуктов
+
 class Product(models.Model):
-    name = models.CharField(max_length=200)
-    description = models.TextField(blank=True)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    image = models.ImageField(upload_to='images/', blank=True)
+    code = models.CharField(max_length=6, unique=True)  # Код товара, уникальный, длина 6 символов
+    name = models.CharField(max_length=255)  # Название товара
+    price = models.DecimalField(max_digits=10, decimal_places=2)  # Цена товара (до 99999999.99)
 
     def __str__(self):
-        return self.name
+        return f"{self.name} ({self.code})"
 
-# Модель для NFC-меток
-class NFCTag(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    nfc_id = models.CharField(max_length=100, unique=True)
-    is_active = models.BooleanField(default=True)
-
-    def __str__(self):
-        return f"NFC Tag for {self.product}"
+    class Meta:
+        verbose_name = "Товар"
+        verbose_name_plural = "Товары"
