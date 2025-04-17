@@ -1,0 +1,1426 @@
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2473
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2524
+"GET /admin/ HTTP/1.1" 200 9910
+Internal Server Error: /admin/products/product/
+Traceback (most recent call last):
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: products_product.nfc_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\admin\options.py", line 2140, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: products_product.nfc_id
+"GET /admin/products/product/ HTTP/1.1" 500 173562
+"GET /admin/ HTTP/1.1" 200 9910
+"GET /admin/products/nfctag/ HTTP/1.1" 500 440134
+"GET /admin/ HTTP/1.1" 200 9910
+Internal Server Error: /admin/authtoken/tokenproxy/
+Traceback (most recent call last):
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: authtoken_token
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\admin\options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\admin\options.py", line 866, in get_changelist_instance
+    return ChangeList(
+        request,
+    ...<12 lines>...
+        self.search_help_text,
+    )
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\admin\views\main.py", line 146, in __init__
+    self.get_results(request)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\admin\views\main.py", line 313, in get_results
+    result_count = paginator.count
+                   ^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: authtoken_token
+"GET /admin/authtoken/tokenproxy/ HTTP/1.1" 500 195962
+"GET /admin/ HTTP/1.1" 200 9910
+"GET /admin/products/nfctag/ HTTP/1.1" 500 440134
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 9910
+"GET /admin/products/nfctag/ HTTP/1.1" 500 440195
+"GET /admin/ HTTP/1.1" 200 9910
+Internal Server Error: /admin/products/product/
+Traceback (most recent call last):
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: products_product.created_at
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\admin\options.py", line 2140, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: products_product.created_at
+"GET /admin/products/product/ HTTP/1.1" 500 173606
+"GET /admin/ HTTP/1.1" 200 9910
+"GET /admin/products/nfctag/ HTTP/1.1" 500 440195
+Watching for file changes with StatReloader
+"GET /admin/products/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/products/ HTTP/1.1" 200 4383
+"POST /admin/login/?next=/admin/products/ HTTP/1.1" 200 4649
+"POST /admin/login/?next=/admin/products/ HTTP/1.1" 200 4649
+"POST /admin/login/?next=/admin/products/ HTTP/1.1" 200 4652
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4365
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 8769
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 10076
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/add/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5190
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/nfctag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5411
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/nfctag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5527
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/nfctag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5609
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/add/ HTTP/1.1" 200 11197
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/nfctag/add/ HTTP/1.1" 200 11534
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 10076
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/auth/user/ HTTP/1.1" 200 14164
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+"GET /admin/auth/user/add/ HTTP/1.1" 200 15059
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/auth/user/add/ HTTP/1.1" 200 15284
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/auth/user/add/ HTTP/1.1" 200 15324
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/auth/user/ HTTP/1.1" 200 14164
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/auth/user/add/ HTTP/1.1" 200 15059
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/auth/user/add/ HTTP/1.1" 200 15420
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/auth/user/add/ HTTP/1.1" 200 15324
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/auth/user/add/ HTTP/1.1" 302 0
+"GET /admin/auth/user/2/change/ HTTP/1.1" 200 27053
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+"GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+"GET /admin/auth/user/ HTTP/1.1" 200 14678
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+"GET /admin/auth/user/add/ HTTP/1.1" 200 15059
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/auth/user/add/ HTTP/1.1" 302 0
+"GET /admin/auth/user/3/change/ HTTP/1.1" 200 27043
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/auth/user/ HTTP/1.1" 200 15188
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/auth/user/?is_superuser__exact=1 HTTP/1.1" 200 14864
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/auth/user/? HTTP/1.1" 200 15188
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/auth/group/ HTTP/1.1" 200 9966
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 9536
+"GET /admin/ HTTP/1.1" 200 9536
+"GET /admin/ HTTP/1.1" 200 9536
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2475
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2526
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 9536
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /
+"GET / HTTP/1.1" 404 2473
+"GET /admin/ HTTP/1.1" 200 9536
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4365
+"GET /static/admin/css/base.css HTTP/1.1" 200 22092
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+"GET /static/admin/css/login.css HTTP/1.1" 200 951
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 9536
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 6208
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+"GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /api/nfc//
+"GET /api/nfc//?id=ADEB4283 HTTP/1.1" 404 3748
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /api/nfc//
+"GET /api/nfc//?id=ADEB4283 HTTP/1.1" 404 3748
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/add/ HTTP/1.1" 200 11197
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"POST /admin/products/nfctag/add/ HTTP/1.1" 200 11536
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/nfctag/add/ HTTP/1.1" 200 11547
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/add/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /admin/products/nfctag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5190
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/nfctag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5529
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/nfctag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5531
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/nfctag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5530
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/add/ HTTP/1.1" 200 11197
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/nfctag/add/ HTTP/1.1" 200 11551
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/nfctag/add/ HTTP/1.1" 200 11539
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/nfctag/add/ HTTP/1.1" 200 11539
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\apps.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 9536
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/add/ HTTP/1.1" 200 11197
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/?_to_field=id&_popup=1 HTTP/1.1" 200 5645
+"GET /admin/products/product/add/?_changelist_filters=_to_field%3Did%26_popup%3D1&_popup=1&_to_field=id HTTP/1.1" 200 7848
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5190
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/add/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5190
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 9536
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/add/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/add/ HTTP/1.1" 200 11197
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/add/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/products/product/add/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/products/product/add/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/add/ HTTP/1.1" 200 11197
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/nfctag/add/ HTTP/1.1" 200 11536
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 11182
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/add/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5190
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/nfctag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5529
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/nfctag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5530
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/products/product/add/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 9536
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4365
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+"GET /static/admin/css/base.css HTTP/1.1" 200 22092
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/css/login.css HTTP/1.1" 200 951
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2527
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 9536
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+Unauthorized: /api/products/
+"POST /api/products/ HTTP/1.1" 401 82
+Unauthorized: /api/products/
+"POST /api/products/ HTTP/1.1" 401 82
+Unauthorized: /api/products/
+"POST /api/products/ HTTP/1.1" 401 82
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 9536
+Unauthorized: /api/products/
+"POST /api/products/ HTTP/1.1" 401 82
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\kuzler\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 9536
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2476
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\kuzler\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2476
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2476
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\kuzler\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 50
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 9536
+"POST /api/products/ HTTP/1.1" 201 70
+"GET /admin/products/product/ HTTP/1.1" 200 13254
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+"GET /static/admin/js/core.js HTTP/1.1" 200 6208
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"POST /api/products/ HTTP/1.1" 201 72
+"GET /admin/products/product/ HTTP/1.1" 200 13727
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /api/products/ HTTP/1.1" 201 80
+"GET /admin/products/product/ HTTP/1.1" 200 14215
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 50
+"GET /admin/products/product/ HTTP/1.1" 200 14215
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 14215
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /api/products/ HTTP/1.1" 201 74
+"GET /admin/products/product/ HTTP/1.1" 200 14693
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/products/product/ HTTP/1.1" 200 14693
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Bad Request: /api/products/
+"POST /api/products/ HTTP/1.1" 400 87
+Watching for file changes with StatReloader
+Bad Request: /api/products/
+"POST /api/products/ HTTP/1.1" 400 87
+Bad Request: /api/products/
+"POST /api/products/ HTTP/1.1" 400 87
+- Broken pipe from ('172.20.10.2', 40178)
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/products/product/ HTTP/1.1" 200 14693
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /api/products/ HTTP/1.1" 201 61
+"GET /admin/products/product/ HTTP/1.1" 200 15159
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+- Broken pipe from ('172.20.10.2', 40200)
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 9536
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2498
+"GET /admin/products/product/ HTTP/1.1" 200 15159
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/add/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/product/add/ HTTP/1.1" 302 0
+"GET /admin/products/product/ HTTP/1.1" 200 15849
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 15633
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/add/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\kuzler\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 15633
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET / HTTP/1.1" 200 50
+Not Found: /фвьшт
+"GET /%D1%84%D0%B2%D1%8C%D1%88%D1%82 HTTP/1.1" 404 2515
+Watching for file changes with StatReloader
+Not Found: /фвьшт
+"GET /%D1%84%D0%B2%D1%8C%D1%88%D1%82 HTTP/1.1" 404 2515
+"GET /admin/ HTTP/1.1" 200 9899
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2498
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 50
+"GET /admin/ HTTP/1.1" 200 9899
+"GET /admin/products/product/ HTTP/1.1" 200 15633
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/add/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/product/add/ HTTP/1.1" 302 0
+"GET /admin/products/product/ HTTP/1.1" 200 16323
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 16107
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/products/product/ HTTP/1.1" 200 16107
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 16107
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/add/ HTTP/1.1" 200 13798
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 16107
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 16107
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Watching for file changes with StatReloader
+Bad Request: /api/products/
+"POST /api/products/ HTTP/1.1" 400 94
+"POST /api/products/ HTTP/1.1" 201 64
+"GET /admin/products/product/ HTTP/1.1" 200 16579
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /api/products/ HTTP/1.1" 201 64
+"GET /admin/products/product/ HTTP/1.1" 200 17051
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 17051
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /api/audio/product/8/ HTTP/1.1" 200 146496
+"GET /admin/products/product/ HTTP/1.1" 200 17051
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/nfctag/ HTTP/1.1" 200 9976
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/ HTTP/1.1" 200 17051
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /api/products/ HTTP/1.1" 201 75
+"GET /admin/products/product/ HTTP/1.1" 200 17548
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/products/product/ HTTP/1.1" 200 17548
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/products/product/ HTTP/1.1" 200 18218
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/product_10.mp3
+Not Found: /media/audio/product_8.mp3
+Not Found: /media/audio/product_9.mp3
+"GET /media/audio/product_10.mp3 HTTP/1.1" 404 2543
+"GET /media/audio/product_8.mp3 HTTP/1.1" 404 2540
+"GET /media/audio/product_9.mp3 HTTP/1.1" 404 2540
+Not Found: /media/audio/product_10.mp3
+Not Found: /media/audio/product_8.mp3
+Not Found: /media/audio/product_9.mp3
+"GET /media/audio/product_10.mp3 HTTP/1.1" 404 2543
+"GET /media/audio/product_8.mp3 HTTP/1.1" 404 2540
+"GET /media/audio/product_9.mp3 HTTP/1.1" 404 2540
+"POST /admin/products/product/ HTTP/1.1" 200 9802
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+"POST /admin/products/product/ HTTP/1.1" 302 0
+"GET /admin/products/product/ HTTP/1.1" 200 15781
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/product/ HTTP/1.1" 200 10083
+"POST /admin/products/product/ HTTP/1.1" 302 0
+"GET /admin/products/product/ HTTP/1.1" 200 10889
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /admin/products/product/add/ HTTP/1.1" 200 12519
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/product/add/ HTTP/1.1" 302 0
+"GET /admin/products/product/ HTTP/1.1" 200 13234
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /admin/products/product/ HTTP/1.1" 200 9359
+"POST /admin/products/product/ HTTP/1.1" 302 0
+"GET /admin/products/product/ HTTP/1.1" 200 10888
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\utils.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/products/ HTTP/1.1" 201 65
+"GET /admin/products/product/ HTTP/1.1" 200 13167
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/product_12.mp3
+"GET /media/product_12.mp3 HTTP/1.1" 404 2525
+Not Found: /media/product_12.mp3
+"GET /media/product_12.mp3 HTTP/1.1" 404 2525
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\kuzler\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\utils.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/products/ HTTP/1.1" 201 65
+"GET /admin/products/product/ HTTP/1.1" 200 13850
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/product_12.mp3
+Not Found: /media/audio/product_13.mp3
+"GET /media/product_12.mp3 HTTP/1.1" 404 2525
+"GET /media/audio/product_13.mp3 HTTP/1.1" 404 2543
+Not Found: /media/product_12.mp3
+"GET /media/product_12.mp3 HTTP/1.1" 404 2525
+Not Found: /media/audio/product_13.mp3
+"GET /media/audio/product_13.mp3 HTTP/1.1" 404 2543
+"POST /admin/products/product/ HTTP/1.1" 200 9505
+"POST /admin/products/product/ HTTP/1.1" 302 0
+"GET /admin/products/product/ HTTP/1.1" 200 10889
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /api/products/ HTTP/1.1" 201 57
+"GET /admin/products/product/ HTTP/1.1" 200 13157
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/product_14.mp3
+"GET /media/audio/product_14.mp3 HTTP/1.1" 404 2543
+Not Found: /media/audio/product_14.mp3
+"GET /media/audio/product_14.mp3 HTTP/1.1" 404 2543
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/products/ HTTP/1.1" 201 57
+"GET /admin/products/product/ HTTP/1.1" 200 13824
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/product_15.mp3
+Not Found: /media/audio/product_14.mp3
+"GET /media/audio/product_15.mp3 HTTP/1.1" 404 2543
+"GET /media/audio/product_14.mp3 HTTP/1.1" 404 2543
+Not Found: /media/audio/product_14.mp3
+Not Found: /media/audio/product_15.mp3
+"GET /media/audio/product_14.mp3 HTTP/1.1" 404 2543
+"GET /media/audio/product_15.mp3 HTTP/1.1" 404 2543
+"POST /admin/products/product/ HTTP/1.1" 200 9489
+"POST /admin/products/product/ HTTP/1.1" 302 0
+"GET /admin/products/product/ HTTP/1.1" 200 10889
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /api/products/ HTTP/1.1" 201 57
+"GET /admin/products/product/ HTTP/1.1" 200 13157
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/product_16.mp3
+"GET /media/audio/product_16.mp3 HTTP/1.1" 404 2543
+Not Found: /media/audio/product_16.mp3
+"GET /media/audio/product_16.mp3 HTTP/1.1" 404 2543
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\utils.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/products/ HTTP/1.1" 201 57
+"GET /admin/products/product/ HTTP/1.1" 200 13822
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/audio_17.mp3
+Not Found: /media/audio/product_16.mp3
+"GET /media/audio/audio_17.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/product_16.mp3 HTTP/1.1" 404 2543
+Not Found: /media/audio/audio_17.mp3
+Not Found: /media/audio/product_16.mp3
+"GET /media/audio/audio_17.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/product_16.mp3 HTTP/1.1" 404 2543
+"POST /api/products/ HTTP/1.1" 201 57
+"GET /admin/products/product/ HTTP/1.1" 200 14486
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/audio_18.mp3
+Not Found: /media/audio/audio_17.mp3
+"GET /media/audio/audio_18.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio_17.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/product_16.mp3
+"GET /media/audio/product_16.mp3 HTTP/1.1" 404 2543
+Not Found: /media/audio/product_16.mp3
+Not Found: /media/audio/audio_17.mp3
+Not Found: /media/audio/audio_18.mp3
+"GET /media/audio/product_16.mp3 HTTP/1.1" 404 2543
+"GET /media/audio/audio_17.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio_18.mp3 HTTP/1.1" 404 2537
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\views.py", line 151, in perform_create
+    generate_and_save_audio(product.id)  # <--- вот это добавили
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\utils.py", line 4, in generate_and_save_audio
+    product = Product.objects.get(id=product_id)
+              ^^^^^^^
+NameError: name 'Product' is not defined
+"POST /api/products/ HTTP/1.1" 500 101767
+Watching for file changes with StatReloader
+Internal Server Error: /api/products/
+Traceback (most recent call last):
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\views.py", line 151, in perform_create
+    generate_and_save_audio(product.id)  # <--- вот это добавили
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\utils.py", line 4, in generate_and_save_audio
+    product = Product.objects.get(id=product_id)
+              ^^^^^^^
+NameError: name 'Product' is not defined
+"POST /api/products/ HTTP/1.1" 500 101902
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\utils.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/products/ HTTP/1.1" 201 57
+"GET /admin/products/product/ HTTP/1.1" 200 16166
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/audio_21.mp3
+"GET /media/audio/audio_21.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/audio_18.mp3
+"GET /media/audio/audio_18.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/audio_17.mp3
+Not Found: /media/audio/product_16.mp3
+Not Found: /media/audio/audio_21.mp3
+"GET /media/audio/audio_17.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/product_16.mp3 HTTP/1.1" 404 2543
+Not Found: /media/audio/audio_18.mp3
+"GET /media/audio/audio_21.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/audio_17.mp3
+"GET /media/audio/audio_18.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/product_16.mp3
+"GET /media/audio/audio_17.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/product_16.mp3 HTTP/1.1" 404 2543
+"POST /admin/products/product/ HTTP/1.1" 200 10041
+"POST /admin/products/product/ HTTP/1.1" 302 0
+"GET /admin/products/product/ HTTP/1.1" 200 10889
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /api/products/ HTTP/1.1" 201 57
+"GET /admin/products/product/ HTTP/1.1" 200 13155
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/audio_22.mp3
+"GET /media/audio/audio_22.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/audio_22.mp3
+"GET /media/audio/audio_22.mp3 HTTP/1.1" 404 2537
+Watching for file changes with StatReloader
+"POST /api/products/ HTTP/1.1" 201 57
+"GET /admin/products/product/ HTTP/1.1" 200 13826
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/audio/audio_23.mp3
+Not Found: /media/audio/audio_22.mp3
+"GET /media/audio/audio/audio_23.mp3 HTTP/1.1" 404 2555
+"GET /media/audio/audio_22.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/audio/audio_23.mp3
+Not Found: /media/audio/audio_22.mp3
+"GET /media/audio/audio/audio_23.mp3 HTTP/1.1" 404 2555
+"GET /media/audio/audio_22.mp3 HTTP/1.1" 404 2537
+"POST /admin/products/product/ HTTP/1.1" 200 9489
+"POST /admin/products/product/ HTTP/1.1" 302 0
+"GET /admin/products/product/ HTTP/1.1" 200 10889
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+- Broken pipe from ('127.0.0.1', 49337)
+Watching for file changes with StatReloader
+"GET /admin/products/product/ HTTP/1.1" 200 10742
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /api/products/ HTTP/1.1" 201 57
+"GET /admin/products/product/ HTTP/1.1" 200 13161
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/audio/audio_24.mp3
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+Not Found: /media/audio/audio/audio_24.mp3
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+"GET /admin/ HTTP/1.1" 200 11261
+"POST /api/products/ HTTP/1.1" 201 57
+"GET /admin/products/product/ HTTP/1.1" 200 13832
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/audio/audio_25.mp3
+Not Found: /media/audio/audio/audio_24.mp3
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+Not Found: /media/audio/audio/audio_24.mp3
+Not Found: /media/audio/audio/audio_25.mp3
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\kuzler\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/products/product/ HTTP/1.1" 200 13832
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/audio/audio_24.mp3
+Not Found: /media/audio/audio/audio_25.mp3
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+Not Found: /media/audio/audio/audio_25.mp3
+Not Found: /media/audio/audio/audio_24.mp3
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+"POST /api/products/ HTTP/1.1" 201 57
+"GET /admin/products/product/ HTTP/1.1" 200 14496
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/audio_26.mp3
+Not Found: /media/audio/audio/audio_25.mp3
+"GET /media/audio/audio_26.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+Not Found: /media/audio/audio/audio_24.mp3
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+Not Found: /media/audio/audio_26.mp3
+Not Found: /media/audio/audio/audio_25.mp3
+Not Found: /media/audio/audio/audio_24.mp3
+"GET /media/audio/audio_26.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+C:\Users\Aleksey L\Desktop\kuzler\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/products/product/ HTTP/1.1" 200 14496
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/audio_26.mp3
+Not Found: /media/audio/audio/audio_25.mp3
+"GET /media/audio/audio_26.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+Not Found: /media/audio/audio/audio_24.mp3
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+Not Found: /media/audio/audio/audio_24.mp3
+Not Found: /media/audio/audio_26.mp3
+Not Found: /media/audio/audio/audio_25.mp3
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+"GET /media/audio/audio_26.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+"POST /api/products/ HTTP/1.1" 201 57
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 50
+"GET /admin/ HTTP/1.1" 200 11261
+"GET /admin/ HTTP/1.1" 200 11261
+"GET /admin/products/product/ HTTP/1.1" 200 15160
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/audio_27.mp3
+Not Found: /media/audio/audio_26.mp3
+"GET /media/audio/audio_27.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio_26.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/audio/audio_24.mp3
+Not Found: /media/audio/audio/audio_25.mp3
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+Not Found: /media/audio/audio_27.mp3
+Not Found: /media/audio/audio_26.mp3
+Not Found: /media/audio/audio/audio_24.mp3
+"GET /media/audio/audio_26.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio_27.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+Not Found: /media/audio/audio/audio_25.mp3
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+"POST /api/products/ HTTP/1.1" 201 57
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 50
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2498
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4365
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 11261
+"GET /admin/products/product/ HTTP/1.1" 200 15824
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/audio_28.mp3
+Not Found: /media/audio/audio_27.mp3
+"GET /media/audio/audio_27.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio_28.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/audio_26.mp3
+Not Found: /media/audio/audio/audio_25.mp3
+Not Found: /media/audio/audio/audio_24.mp3
+"GET /media/audio/audio_26.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+Not Found: /media/audio/audio_28.mp3
+Not Found: /media/audio/audio/audio_25.mp3
+Not Found: /media/audio/audio/audio_24.mp3
+Not Found: /media/audio/audio_26.mp3
+"GET /media/audio/audio_28.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/audio_27.mp3
+- Broken pipe from ('127.0.0.1', 58836)
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+"GET /media/audio/audio_26.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio_27.mp3 HTTP/1.1" 404 2537
+"GET /admin/products/product/ HTTP/1.1" 200 16334
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/audio_27.mp3
+Not Found: /media/audio/audio_28.mp3
+"GET /media/audio/audio_27.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio_28.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/audio/audio_25.mp3
+Not Found: /media/audio/audio_26.mp3
+"GET /media/audio/audio_26.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+Not Found: /media/audio/audio/audio_24.mp3
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+Not Found: /media/audio/audio_27.mp3
+Not Found: /media/audio/audio_28.mp3
+Not Found: /media/audio/audio_26.mp3
+Not Found: /media/audio/audio/audio_25.mp3
+"GET /media/audio/audio_27.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio_28.mp3 HTTP/1.1" 404 2537
+- Broken pipe from ('127.0.0.1', 58859)
+- Broken pipe from ('127.0.0.1', 58858)
+Not Found: /media/audio/audio/audio_24.mp3
+"GET /media/audio/audio_26.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 50
+"GET /admin/ HTTP/1.1" 200 11261
+"GET /admin/products/product/ HTTP/1.1" 200 16334
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/audio_28.mp3
+"GET /media/audio/audio_28.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/audio_27.mp3
+Not Found: /media/audio/audio_26.mp3
+"GET /media/audio/audio_27.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/audio/audio_25.mp3
+- Broken pipe from ('127.0.0.1', 59137)
+"GET /media/audio/audio_26.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/audio/audio_24.mp3
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+Not Found: /media/audio/audio_28.mp3
+Not Found: /media/audio/audio_27.mp3
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+Not Found: /media/audio/audio/audio_25.mp3
+Not Found: /media/audio/audio_26.mp3
+"GET /media/audio/audio_28.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio_27.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/audio/audio_24.mp3
+"GET /media/audio/audio/audio_25.mp3 HTTP/1.1" 404 2555
+"GET /media/audio/audio_26.mp3 HTTP/1.1" 404 2537
+"GET /media/audio/audio/audio_24.mp3 HTTP/1.1" 404 2555
+"POST /admin/products/product/ HTTP/1.1" 200 10042
+"POST /admin/products/product/ HTTP/1.1" 302 0
+"GET /admin/products/product/ HTTP/1.1" 200 10889
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /api/products/ HTTP/1.1" 201 58
+"GET /admin/products/product/ HTTP/1.1" 200 13157
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/audio/audio_30.mp3
+"GET /media/audio/audio_30.mp3 HTTP/1.1" 404 2537
+Not Found: /media/audio/audio_30.mp3
+"GET /media/audio/audio_30.mp3 HTTP/1.1" 404 2537
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\kuzler\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/products/ HTTP/1.1" 201 58
+"GET /admin/products/product/ HTTP/1.1" 200 13832
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /media/product_audio/audio_31.mp3
+Not Found: /media/audio/audio_30.mp3
+"GET /media/audio/audio_30.mp3 HTTP/1.1" 404 2537
+"GET /media/product_audio/audio_31.mp3 HTTP/1.1" 404 2561
+Not Found: /media/audio/audio_30.mp3
+Not Found: /media/product_audio/audio_31.mp3
+"GET /media/audio/audio_30.mp3 HTTP/1.1" 404 2537
+"GET /media/product_audio/audio_31.mp3 HTTP/1.1" 404 2561
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\kuzler\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /api/products/ HTTP/1.1" 201 58
+"GET /admin/products/product/ HTTP/1.1" 200 14506
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /media/product_audio/audio_31.mp3 HTTP/1.1" 200 36672
+"GET /media/audio/audio_30.mp3 HTTP/1.1" 200 36672
+"GET /media/product_audio/audio_32.mp3 HTTP/1.1" 200 36672
+"POST /admin/products/product/ HTTP/1.1" 302 0
+"GET /admin/products/product/ HTTP/1.1" 200 14649
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /media/product_audio/audio_32.mp3 HTTP/1.1" 304 0
+"GET /media/product_audio/audio_31.mp3 HTTP/1.1" 304 0
+"GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+"GET /media/audio/audio_30.mp3 HTTP/1.1" 200 36672
+"POST /admin/products/product/ HTTP/1.1" 200 9630
+"POST /admin/products/product/ HTTP/1.1" 302 0
+"GET /admin/products/product/ HTTP/1.1" 200 10889
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 50
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2670
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4365
+"GET /static/admin/css/base.css HTTP/1.1" 200 22092
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+"GET /static/admin/css/login.css HTTP/1.1" 200 951
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 11265
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /admin/products/product/ HTTP/1.1" 200 10742
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/core.js HTTP/1.1" 200 6208
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+"GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /admin/products/product/ HTTP/1.1" 200 10742
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Watching for file changes with StatReloader
+"GET /admin/products/product/ HTTP/1.1" 200 10742
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 11265
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2670
+"GET /admin/products/product/ HTTP/1.1" 200 10742
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"POST /api/products/ HTTP/1.1" 201 59
+"GET /admin/products/product/ HTTP/1.1" 200 13167
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /media/product_audio/audio_33.mp3 HTTP/1.1" 200 37248
+"POST /api/products/ HTTP/1.1" 201 70
+"GET /admin/products/product/ HTTP/1.1" 200 13866
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /media/product_audio/audio_33.mp3 HTTP/1.1" 304 0
+"GET /media/product_audio/audio_34.mp3 HTTP/1.1" 200 39552
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2670
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 50
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2669
+"GET /admin/ HTTP/1.1" 200 10291
+"GET /admin/products/product/ HTTP/1.1" 200 13087
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /media/product_audio/audio_34.mp3 HTTP/1.1" 200 39552
+"GET /media/product_audio/audio_33.mp3 HTTP/1.1" 200 37248
+Not Found: /api/
+"GET /api/?id=5327CC2CA00001 HTTP/1.1" 404 5246
+Watching for file changes with StatReloader
+Not Found: /api/
+"GET /api/?id=5327CC2CA00001 HTTP/1.1" 404 5246
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/products/product/ HTTP/1.1" 200 13087
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /media/product_audio/audio_34.mp3 HTTP/1.1" 304 0
+"GET /media/product_audio/audio_33.mp3 HTTP/1.1" 304 0
+Not Found: /api/
+"GET /api/?id=5327CC2CA00001 HTTP/1.1" 404 30
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/products/product/ HTTP/1.1" 200 13087
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /api/
+"GET /api/?id=5327CC2CA00001 HTTP/1.1" 404 5248
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/products/product/ HTTP/1.1" 200 13087
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /media/product_audio/audio_34.mp3 HTTP/1.1" 304 0
+"GET /media/product_audio/audio_33.mp3 HTTP/1.1" 304 0
+Not Found: /api/
+"GET /api/?id=5327CC2CA00001 HTTP/1.1" 404 5248
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/products/product/ HTTP/1.1" 200 13087
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+"GET /media/product_audio/audio_33.mp3 HTTP/1.1" 304 0
+"GET /media/product_audio/audio_34.mp3 HTTP/1.1" 304 0
+Not Found: /api/
+"GET /api/?id=5327CC2CA00001 HTTP/1.1" 404 5273
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\kuzler\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/products/product/ HTTP/1.1" 200 13087
+"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+Not Found: /api/
+"GET /api/?id=5327CC2CA00001 HTTP/1.1" 404 30
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\kuzler\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\kuzler\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/
+"GET /api/?id=5327CC2CA00001 HTTP/1.1" 404 30
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\kuzler\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/
+"GET /api/?id=5327CC2CA00001 HTTP/1.1" 404 5108
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/
+"GET /api/?id=5327CC2CA00001 HTTP/1.1" 404 30
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/
+"GET /api/?id=5327CC2CA00001 HTTP/1.1" 404 30
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\kuzler\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Aleksey L\Desktop\kuzler\Kuzler_proect-main\Kuzler_proect-main\kuzler\products\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /api/
+"GET /api/?id=5327CC2CA00001 HTTP/1.1" 404 30
